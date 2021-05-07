@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="/myApp/public/style/design.css">
+<h1 class="display-4">{{postagem.titulo}}</h1>
+<div class="card">
+    <div class="card-body">
+        <p class="lead">{{postagem.conteudo}}</p>
+        <hr class="my-4">
+        <small class="categoriaPostagem">Categoria: {{postagem.categoria.nome}}</small>
+        <br>
+        <small class="dataPostagem">Data de criação: {{postagem.data}}</small>
+        <hr class="mt-2">
+        <a href="/"><button class="btn btn-success">Voltar</button></a>
+    </div>
+</div>
+
+<style>
+    .dataPostagem{
+    color: silver;
+}
+
+.categoriaPostagem{
+    color: silver;
+    font-family:Arial, Helvetica, sans-serif;
+}
+</style>

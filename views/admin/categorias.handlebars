@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="/style/design.css">
+<h1>Lista de categorias da empresa</h1>
+<a href="/admin/categorias/add"><button class="btn btn-success mt-3">Nova categoria</button></a>
+<hr>
+{{#each categorias}}
+    <div class="card">
+        <div class="card-body mt-2">
+            <h4>{{nome}}</h4>
+            <h6>{{slug}}</h6>
+            <small class="dataCategorias">Data de criação: {{data}}</small>
+            <br>
+            <hr>
+           <div class="editarCategorias">
+               <a href="/admin/categorias/editar/{{_id}}"><button class="btn btn-success mt-3">Editar</button></a>
+           </div>
+           <div class="apagarCategorias">
+               <form action='/admin/categorias/deletar' method="POST">
+               <input type="hidden" name="id" value="{{_id}}">
+               <button class="btn btn-danger mt-3">Apagar</button>
+           </form>
+           </div>
+        </div>
+    </div>
+    <br>
+{{else}}
+    <h5 class="mt-4">Nenhuma categoria registada!</h5>
+{{/each}}
+<hr>
+<br>
+
+    

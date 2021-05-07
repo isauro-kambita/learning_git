@@ -1,0 +1,11 @@
+<h1 class="display-4">Welcome to the admin page</h1>
+
+{{#each postagens}}
+<hr class="my-2">
+    <p6 class="lead" style="font-weight:500; color:rgb(70, 69, 69);">{{titulo}}</p6>
+    <p class="my-1">{{descricao}}</p>
+    <p class="my-1">{{categoria.nome}}</p>
+    <small style="color: rgb(100, 99, 99);"></b> {{data}}</small>
+{{else}}
+    <h3>Nos posts available!</h3>
+{{/each}}

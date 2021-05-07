@@ -1,0 +1,37 @@
+
+<div class="jumbotron" style="background-color: #CACED1;">
+    <h1 class="display-4" style="margin-left: 50px; color:rgb(54, 54, 54);">Bem-vindo a Teia Coding</h1>
+    <p class="lead" style="margin-left: 50px;">O seu website oficial para cursos online em Angola.</p>
+    <hr class="my-2">
+    <p style="margin-left: 50px;">Aqui você tem acesso às suas novidades dos serviços online que lhe possa interessar.</p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="/usuario/registo" role="button" style="margin-left: 50px; background:rgb(68, 124, 214);">Criar conta</a>
+    </p>
+</div>
+
+    {{#each postagens}}
+    <div class="card mt-1">
+        <div class="card-body">
+            <h4 style="color: rgb(54, 54, 54); font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">{{titulo}}</h4>
+            <small>{{descricao}}</small></br>
+            <small>Data da publicação: {{data}}</small></br>
+            <small>Categoria: {{categoria.nome}}</small></br>
+            <a href="/postagem/{{slug}}">Leia mais...</a></br>
+        </div>
+    </div>
+    {{else}}
+    <h2>Nenhuma postagem registada!</h2>
+    {{/each}}
+    <br>
+
+    <style>
+        .display-4{
+            margin-top: 20;
+            padding: 0;
+        }
+        .jumbotron{
+            margin:0;
+            padding: 0;
+            height: 230px;
+        }
+    </style>

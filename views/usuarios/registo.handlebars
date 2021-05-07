@@ -1,0 +1,64 @@
+{{#each erros}}
+    <div class="alert alert-danger">{{texto}}</div>
+{{else}}
+
+{{/each}}
+
+<div class="card mt-1">
+    <div class="card-body">
+        <img src="../img/x-23-256.png" class="registo">
+        <h5 class="text_">Criando conta</h5>
+        <form action="/usuario/registo" method="post">
+                <input id="nome" type="text" name="nome" placeholder="Nome *" class="form-control mt-3" required>
+                <input id="email" type="text" name="email" placeholder="E-mail *" class="form-control mt-3" required>
+                <input id="password1" type="password" name="senha" placeholder="Senha1 *" class="form-control mt-3" required>
+                <input id="password2" type="password" name="senha2" placeholder="Senha2 *" class="form-control mt-3" required>
+            <button type="submit" class="btn btn-primary mt-4">Criar conta</button>
+        </form>
+    </div>
+</div>
+
+<style>
+    .registo{
+        margin-left: 420px;
+        margin-bottom: 0px;
+    }
+
+    .text_{
+        margin-left: 460px;
+        color: rgb(56, 55, 55);
+    }
+
+    .card{
+        border: 0px;
+    }
+
+    #nome{
+        border-color: rgb(196, 192, 192);
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom-width: 1px;
+    }
+    #email{
+        border-color: rgb(196, 192, 192);
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom-width: 1px;
+    }
+    #password1{
+        border-color: rgb(196, 192, 192);
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom-width: 1px;
+    }
+    #password2{
+        border-color: rgb(196, 192, 192);
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom-width: 1px;
+    }
+</style>

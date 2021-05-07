@@ -1,0 +1,40 @@
+    <div class="card">
+        <div class="card-body">
+            <img src="../img/boy-512.png" class="imagem_login" style="width: 250px; height: 250px;">
+            <h5 class="texto" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Logando</h5>
+            <form action="/usuario/login" method="post">
+                <input id="email" type="email" name="email" placeholder="E-mail *" class="form-control mt-3" required>
+                <input id="password" type="password" name="senha" placeholder="Password *" class="form-control mt-3" required>
+                <button class="btn btn-primary mt-4" type="submit;  border:0;">Logar</button>
+            </form>
+        </div>
+    </div>
+
+<style>
+    .card{
+        border: 0;
+    }
+    .imagem_login{
+        margin-left: 430px;
+    }
+     .texto{
+        margin-left: 515px;
+        color: rgb(56, 55, 55);
+    }
+
+    #email {
+        border-color: rgb(196, 192, 192);
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom-width: 1px;
+    }
+
+    #password{
+        border-color: rgb(196, 192, 192);
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom-width: 1px;
+    }
+</style>

@@ -1,0 +1,12 @@
+<h2 class="display-3">Categorias</h2>
+<hr>
+{{#each categorias}}
+            <h4 style="color: rgb(54, 54, 54); font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">{{nome}}</h4>
+            <a href="/categorias/{{slug}}">{{slug}}</a>
+            <br>
+            <small style="color: silver;">Data da publicação: {{data}}</small>
+            <hr>
+{{else}}
+    <h2>Nenhuma categoria registada!</h2>
+{{/each}}
+    <br>

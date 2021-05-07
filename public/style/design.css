@@ -1,0 +1,61 @@
+/*
+formatacao 
+para admin/categorias
+*/
+body{
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 100vh !important;
+}
+footer{
+    background: #292829;
+}
+footer #naveg-footer{
+    padding: 15px;
+    height: 80px;
+}
+.container{
+    flex-grow: 1;
+}
+.dataCategorias{
+    color: silver; 
+}
+
+.editarCategorias{
+    float: left;
+}
+.apagarCategorias{
+    float: right;
+}
+
+/*
+formatacao 
+para admin/postagens
+*/
+.dataPostagens{
+    color: gray;
+}
+
+.descricaoPostagens{
+    color:slategrey
+}
+
+.editarPostagens{
+    float:left;
+}
+
+.apagarPostagens{
+    float: right; margin-top: 0;
+}
+
+/*
+    formatacao de 
+    views/postagem/postagem.handlebars
+*/
+.categoriaPostagem{
+    size: 15px;
+    color: silver;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
